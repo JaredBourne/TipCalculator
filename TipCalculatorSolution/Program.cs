@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TipCalculator.Form1());
+            Application.Run(new TipCalculator.MainWindow());
         }
     }
 }
