@@ -132,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 179);
+            this.ClientSize = new System.Drawing.Size(438, 179);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.TipTotalLabel);
