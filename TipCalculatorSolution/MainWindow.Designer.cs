@@ -32,13 +32,13 @@
             this.BillTotal = new System.Windows.Forms.TextBox();
             this.BillTotalLabel = new System.Windows.Forms.Label();
             this.TipPercentageLabel = new System.Windows.Forms.Label();
-            this.TipPercentage = new System.Windows.Forms.TextBox();
             this.TipTotalLabel = new System.Windows.Forms.Label();
             this.TotalTip = new System.Windows.Forms.TextBox();
             this.BillplusTipLabel = new System.Windows.Forms.Label();
             this.BillPlusTip = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.TipPercentage = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BillTotal
@@ -67,13 +67,6 @@
             this.TipPercentageLabel.Text = "Tip Percentage (Example: 20)";
             this.TipPercentageLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // TipPercentage
-            // 
-            this.TipPercentage.Location = new System.Drawing.Point(277, 32);
-            this.TipPercentage.Name = "TipPercentage";
-            this.TipPercentage.Size = new System.Drawing.Size(141, 22);
-            this.TipPercentage.TabIndex = 2;
-            // 
             // TipTotalLabel
             // 
             this.TipTotalLabel.AutoSize = true;
@@ -87,7 +80,7 @@
             // TotalTip
             // 
             this.TotalTip.Enabled = false;
-            this.TotalTip.Location = new System.Drawing.Point(277, 59);
+            this.TotalTip.Location = new System.Drawing.Point(277, 61);
             this.TotalTip.Name = "TotalTip";
             this.TotalTip.Size = new System.Drawing.Size(141, 22);
             this.TotalTip.TabIndex = 6;
@@ -128,11 +121,26 @@
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
+            // TipPercentage
+            // 
+            this.TipPercentage.FormattingEnabled = true;
+            this.TipPercentage.Items.AddRange(new object[] {
+            "10",
+            "15",
+            "20",
+            "25",
+            "30"});
+            this.TipPercentage.Location = new System.Drawing.Point(277, 31);
+            this.TipPercentage.Name = "TipPercentage";
+            this.TipPercentage.Size = new System.Drawing.Size(141, 24);
+            this.TipPercentage.TabIndex = 10;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(438, 179);
+            this.Controls.Add(this.TipPercentage);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.TipTotalLabel);
@@ -140,7 +148,6 @@
             this.Controls.Add(this.BillplusTipLabel);
             this.Controls.Add(this.BillPlusTip);
             this.Controls.Add(this.TipPercentageLabel);
-            this.Controls.Add(this.TipPercentage);
             this.Controls.Add(this.BillTotalLabel);
             this.Controls.Add(this.BillTotal);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -158,13 +165,13 @@
         private System.Windows.Forms.TextBox BillTotal;
         private System.Windows.Forms.Label BillTotalLabel;
         private System.Windows.Forms.Label TipPercentageLabel;
-        private System.Windows.Forms.TextBox TipPercentage;
         private System.Windows.Forms.Label TipTotalLabel;
         private System.Windows.Forms.TextBox TotalTip;
         private System.Windows.Forms.Label BillplusTipLabel;
         private System.Windows.Forms.TextBox BillPlusTip;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.ComboBox TipPercentage;
     }
 }
 
